@@ -1,6 +1,11 @@
 package com.cks.springdemo;
 
 public class CodingCoach implements Coach {
+    private FortuneService fortuneService;
+
+    public CodingCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
 
     @Override
     public String getDailyWorkout() {
@@ -9,6 +14,6 @@ public class CodingCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-        return null;
+        return "from coding " + fortuneService.getFortune();
     }
 }

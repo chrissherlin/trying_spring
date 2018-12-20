@@ -17,7 +17,7 @@
 
 	<!-- id is an alias /-->
 	<bean id="myCoach"
-		class="com.cks.springdemo.BaseballCoach"> <!-- fully qualified class name of implementation class -->
+		class="com.cks.springdemo.Track Coach"> <!-- fully qualified class name of implementation class -->
 		<!--setup constructor injection-->
 		<constructor-arg ref="myFortune"/>
 
