@@ -15,6 +15,16 @@
 		class="com.cks.springdemo.BaseballCoach"> <!-- fully qualified class name of implementation class -->
 	</bean>
 
+	<!--
+		Add a logger config to see logging messages.
+		-For more detailed logs, set values to "FINEST"
+		-ID is alias , class is path to implementation we want to use
+		-init-method method that will be called
+	-->
+	<bean id="myLoggerConfig" class="com.cks.springdemo.MyLoggerConfig" init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE"></property>
+		<property name="printedLoggerLevel" value="FINE"></property>
+	</bean>
 	<!--context:component-scan base-package="com.cks.springdemo" /-->
 
 </beans>
