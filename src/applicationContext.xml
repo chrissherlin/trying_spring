@@ -23,7 +23,11 @@
 
 	</bean>
 
-
+    <bean id="myCricketCoach"
+        class="com.cks.springdemo.CricketCoach">
+    <!--set up setter injection-->
+        <property name="fortuneService" ref="myFortune"></property>
+    </bean>
 
 
 	<!--
