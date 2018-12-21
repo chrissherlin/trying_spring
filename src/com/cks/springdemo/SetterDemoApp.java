@@ -12,6 +12,7 @@ public class SetterDemoApp {
         // call methods on the bean
         System.out.println(coach.getDailyFortune());
         System.out.println(coach.getDailyWorkout());
+
         // close the context
         context.close();
     }

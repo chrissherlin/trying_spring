@@ -2,6 +2,21 @@ package com.cks.springdemo;
 
 public class CricketCoach implements Coach {
 
+
+    private String emailAddress;
+    private String team;
+
+    public void setEmailAddress(String emailAddress) {
+        System.out.println("Cricket: inside email setter");
+        this.emailAddress = emailAddress;
+    }
+
+    public void setTeam(String team) {
+        System.out.println("Cricket: inside team setter");
+
+        this.team = team;
+    }
+
     private FortuneService fortuneService;
     // create no arg constructor
 

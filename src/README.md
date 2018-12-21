@@ -8,3 +8,9 @@
 
 1 - Create setter methods in class for injections
 2 - Configure DI in spring config file
+
+# Development Process - Injecting Literal Values
+
+1 - Create setter methods in your class for injections
+2 - Configure the injection in Spring config file
+
