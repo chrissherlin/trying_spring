@@ -9,10 +9,12 @@
 
 	<!-- add entry to enable component scanning -->
 
+    <!--Load properties file for sport.properties -->
+    <!--<context:property-placeholder location="classpath:sport.properties"/>-->
 	<!-- define beans here -->
 
 	<bean id="myFortune"
-	      class="com.cks.springdemo.FortuneServiceImpl">
+	      class="com.cks.springdemo.MyFortune">
 	</bean>
 
 	<!-- id is an alias /-->
@@ -27,8 +29,8 @@
         class="com.cks.springdemo.CricketCoach">
     <!--set up setter injection-->
         <property name="fortuneService" ref="myFortune"></property>
-        <property name="emailAddress" value="foo@bar.com"/>
-        <property name="team" value="Arizona Foobarians"/>
+        <property name="emailAddress" value="${foo.email}"/>
+        <property name="team" value="${foo.team}"/>
     </bean>
 
 

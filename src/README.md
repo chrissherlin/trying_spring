@@ -14,3 +14,8 @@
 1 - Create setter methods in your class for injections
 2 - Configure the injection in Spring config file
 
+# Development Process - Injecting Values from Property Values
+
+1 - Create properties files
+2 - Load property file in spring file
+3 - Reference values from Properties file
